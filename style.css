@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Poppins:wght@200;400&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ecf0f3;
+}
+
+/* navbar style */
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1;
+}
+
+nav .menu {
+    max-width: 1270px;
+    margin: auto;
+    padding-left: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo a {
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #4e67eb;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.menu ul { 
+    list-style: none;
+    display: flex;
+}
+
+.menu ul a {
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'ubuntu', sans-serif;
+    color: #31344b;
+    font-weight: 400;
+    display: inline-flex;
+    padding: 10px 12px;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1;
+    position: relative;
+    transition: all 0.3 ease;
+}
+
+.menu ul a:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset -3px -3px 7px #ffffff,
+                inset 3px 3px 5px #ceced1;
+}
+
+.menu ul a:hover {
+    color: #4e67eb;
+}
+/* navbar selesai */
+
+.home {
+    display: flex;
+    background: url(asset/img/home.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: #403e3e;
+    min-height: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-conten .text-1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.home .home-conten .text-2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: #31344b;
+}
+
+span {
+    color: #4e67eb;
+}
+
+.biasa {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #25D366;
+    padding: 5px;
+    position: relative;
+    width: 6.2em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 17px;
+    font-weight: 200;
+    border-radius: 0.4em;
+}
+
+button p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.15em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #25D366;
+}
+
+button svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+}
+
+button:hover p {
+    left: 0.5em;
+    color: #fff
+}
+
+button:hover svg {
+    opacity: 1;
+}
+
+button:hover {
+    background-color: #25D366;
+}
